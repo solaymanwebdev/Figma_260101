@@ -1,0 +1,73 @@
+/* all common css start */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+/* all common css end */
+
+
+
+/* header part start */
+.headerPart{
+    padding: 50px 0;
+    background: #000000;
+}
+.logoMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 25%;
+}
+.menu{
+    width: 50%;
+}
+.icon{
+    width: 25%;
+}
+
+.menu,ul,li,a{
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    color: #f0f0f0;
+}
+
+.icon, i{
+    color: #f0f0f0;
+   
+}
+.icon, span{
+    color: #f0f0f0;
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 400;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+/* header part end */
