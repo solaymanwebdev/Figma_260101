@@ -13,10 +13,17 @@ ul {
 
 a {
     text-decoration: none;
+    display: inline-block;
 }
 .container{
     width: 1320px;
     margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
 }
 
 /* all common css end */
@@ -26,48 +33,153 @@ a {
 /* header part start */
 .headerPart{
     padding: 50px 0;
-    background: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .logoMenu{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .logo{
-    width: 25%;
+    width: 15%;
 }
 .menu{
-    width: 50%;
+    width: 70%;
 }
 .icon{
-    width: 25%;
+    width: 15%;
 }
 
+.menu,ul{
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+}
 .menu,ul,li,a{
     font-family: Oswald;
     font-size: 16px;
     font-weight: 400;
-    display: flex;
-    justify-content: center;
-    column-gap: 10px;
     color: #f0f0f0;
 }
 
 .icon, i{
     color: #f0f0f0;
+    font-size: 25px;
    
 }
-.icon, span{
+.iconSpan, span{
     color: #f0f0f0;
     font-family: Oswald;
     font-size: 16px;
     font-weight: 400;
 }
+.iconSpan i{
+    font-size: 14px;
+}
 .icon{
     display: flex;
-    justify-content: center;
     align-items: center;
     column-gap: 20px;
 }
 /* header part end */
+
+/* banner part start */
+.bannerPart{
+    padding-top: 347px;
+    padding-bottom: 100px;
+    background: url(../images/banner\ 2.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.bannerContent h4{
+    font-family: oswald;
+    font-size: 27px;
+    font-weight: 400px;
+    color: #ffffff;
+    margin-bottom: 29px;
+}
+.bannerContent h1{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: oswald;
+    color: #ffffff;
+    margin-bottom: 142px;
+}
+
+.bannerContent a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: oswald;
+    color: #000;
+    padding: 10px 15px;
+    background: #fff;
+    margin-bottom: 302px;
+}
+.bannerContent i {
+    color: #000;
+}
+
+.bannerIcon{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.divOne{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+}
+.divOne img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.divTwo{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+}
+.divTwo img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.divThree{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+}
+.divThree img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.divFour{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+}
+.divFour img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+/* banner part end */
