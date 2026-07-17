@@ -15,12 +15,19 @@ a {
     text-decoration: none;
     display: inline-block;
 }
-.container{
+
+.container {
     width: 1320px;
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6, p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
     padding: 0;
     line-height: 0.8;
@@ -31,155 +38,334 @@ h1, h2, h3, h4, h5, h6, p{
 
 
 /* header part start */
-.headerPart{
+.headerPart {
     padding: 50px 0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
 }
-.logoMenu{
+
+.logoMenu {
     display: flex;
     align-items: center;
 }
 
-.logo{
-    width: 15%;
-}
-.menu{
-    width: 70%;
-}
-.icon{
+.logo {
     width: 15%;
 }
 
-.menu,ul{
+.menu {
+    width: 70%;
+}
+
+.icon {
+    width: 15%;
+}
+
+.menu,
+ul {
     display: flex;
     align-items: center;
     column-gap: 35px;
 }
-.menu,ul,li,a{
+
+.menu,
+ul,
+li,
+a {
     font-family: Oswald;
     font-size: 16px;
     font-weight: 400;
     color: #f0f0f0;
 }
 
-.icon, i{
+.icon,
+i {
     color: #f0f0f0;
     font-size: 25px;
-   
+
 }
-.iconSpan, span{
+
+.iconSpan,
+span {
     color: #f0f0f0;
     font-family: Oswald;
     font-size: 16px;
     font-weight: 400;
 }
-.iconSpan i{
+
+.iconSpan i {
     font-size: 14px;
 }
-.icon{
+
+.icon {
     display: flex;
     align-items: center;
     column-gap: 20px;
 }
+
 /* header part end */
 
 /* banner part start */
-.bannerPart{
+.bannerPart {
     padding-top: 347px;
     padding-bottom: 100px;
-    background: url(../images/banner\ 2.png); 
+    background: url(../images/banner\ 2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
 }
-.bannerContent h4{
+
+.bannerContent h4 {
     font-family: oswald;
     font-size: 27px;
     font-weight: 400px;
     color: #ffffff;
     margin-bottom: 29px;
 }
-.bannerContent h1{
+
+.bannerContent h1 {
     font-size: 60px;
     font-weight: 600;
     font-family: oswald;
     color: #ffffff;
-    margin-bottom: 142px;
+    display: inline-block;
+    padding-bottom: 141px;
 }
 
-.bannerContent a{
+.underLine {
+    position: relative;
+
+}
+
+.underLine::after {
+    position: absolute;
+    background: #fff;
+    content: "";
+    height: 4px;
+    width: 92px;
+    right: -120px;
+    bottom: 138px;
+}
+
+.bannerContent a {
     font-size: 16px;
     font-weight: 400;
     font-family: oswald;
     color: #000;
     padding: 10px 15px;
     background: #fff;
-    margin-bottom: 302px;
 }
+
 .bannerContent i {
     color: #000;
 }
 
-.bannerIcon{
+.bannerIcon {
     display: flex;
     align-items: center;
     column-gap: 20px;
+    padding-top: 302px;
 }
 
-.divOne{
+.divOne {
     height: 35px;
     width: 35px;
     border-radius: 50%;
     background: #fff;
     position: relative;
 }
-.divOne img{
+
+.divOne img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
 }
-.divTwo{
+
+.divTwo {
     height: 35px;
     width: 35px;
     border-radius: 50%;
     background: #fff;
     position: relative;
 }
-.divTwo img{
+
+.divTwo img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
 }
-.divThree{
+
+.divThree {
     height: 35px;
     width: 35px;
     border-radius: 50%;
     background: #fff;
     position: relative;
 }
-.divThree img{
+
+.divThree img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
 }
-.divFour{
+
+.divFour {
     height: 35px;
     width: 35px;
     border-radius: 50%;
     background: #fff;
     position: relative;
 }
-.divFour img{
+
+.divFour img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
 }
 
 /* banner part end */
+
+/* About Part Start */
+#aboutSection {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background: #121212;
+}
+
+.aboutFlex {
+    display: flex;
+}
+
+.aboutLeft {
+    width: 60%;
+}
+
+.aboutRight {
+    width: 40%;
+    color: #fff;
+    padding-top: 175px;
+}
+.aboutRight h3{
+    font-size: 27px;
+    font-weight: 600;
+    font-family: oswald;
+    padding-bottom: 20px;
+}
+.aboutRight ol li{
+    padding-bottom: 5px;
+    font-family: barlow;
+    font-size: 18px;
+    font-weight: 400;
+}
+.aboutRight ol li i{
+    color: #ff4655;
+    margin-right: 5px;
+
+}
+.aboutRight p{
+    font-family: oswald;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 30px;
+    line-height: 30px;
+    width: 467px;
+}
+
+.aboutRight a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: oswald;
+    color: #fff;
+    padding: 10px 15px;
+    background: #212121;
+}
+
+.aboutLeft h3 {
+    font-family: oswald;
+    font-size: 38px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 50px;
+    width: 514px;
+    position: relative;
+}
+
+.aboutLeft h3::before {
+    position: absolute;
+    left: 41%;
+    bottom: 8px;
+    content: "";
+    height: 4px;
+    width: 120px;
+    background: #ff0000;
+}
+
+.aboutLeft img{
+    padding-top: 70px;
+}
+
+
+/* About Part End */
+
+/* Gamming Part Start */
+#gamePart {
+    padding-top: 115px;
+    padding-bottom: 97px;
+    background: #191919;
+}
+
+.gameFlex {
+    display: flex;
+
+}
+
+.leftGame {
+    width: 50%;
+}
+
+.rightGame {
+    width: 50%;
+    text-align: right;
+    position: relative;
+
+}
+
+.arrow {
+    content: "";
+    right: 25px;
+    bottom: 20px;
+    position: absolute;
+}
+
+.rightGame h3 {
+    font-family: barlow;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 88px;
+    width: 454px;
+    margin-left: auto;
+    position: relative;
+}
+
+.rightGame h3::after {
+    position: absolute;
+    right: 120px;
+    bottom: 8px;
+    content: "";
+    background: #ff3434;
+    height: 3px;
+    width: 105px;
+
+}
+
+
+
+/* Gaming Part End */
